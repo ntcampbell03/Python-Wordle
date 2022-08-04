@@ -51,5 +51,3 @@ class Wordle:
         playAgain = input("Do you want to play again? (Y/n): ")
         if playAgain == "Y" or playAgain == "y":
             self.play()
-            
-Wordle = Wordle(wordBank)
