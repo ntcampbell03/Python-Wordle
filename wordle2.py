@@ -1,6 +1,6 @@
 import random
 
-fp = open("wordle_words", "r") # Creates wordbank
+fp = open("wordle_words.txt", "r") # Creates wordbank
 wordBank = "".join(fp.readlines())
 wordBank = wordBank.split("\n")
 fp.close()
