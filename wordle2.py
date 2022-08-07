@@ -27,7 +27,7 @@ class Wordle:
             print(correct)
         elif guessWord == targetWord:
             print("\033[0;30;42m", guessWord, "\033[0;30;47m")
-            print("\033[0;30;42m you won good job now piss off", "\033[0;30;47m")
+            print("\033[0;30;42m You won good job!", "\033[0;30;47m")
             return True
 
     def play(self): # Plays wordle
@@ -51,3 +51,6 @@ class Wordle:
         playAgain = input("Do you want to play again? (Y/n): ")
         if playAgain == "Y" or playAgain == "y":
             self.play()
+
+Wordle = Wordle(wordBank)
+Wordle.play()
